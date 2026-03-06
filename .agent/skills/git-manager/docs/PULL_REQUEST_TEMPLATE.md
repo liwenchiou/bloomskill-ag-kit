@@ -24,8 +24,3 @@
 - [ ] 單元測試已通過
 - [ ] 已在開發環境驗證功能
 - [ ] 無破壞性變更 (Breaking Changes)
-
----
-
-> [!NOTE]
-> 本 PR 由 Git Manager 自動生成。

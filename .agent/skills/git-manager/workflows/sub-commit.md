@@ -5,10 +5,10 @@ description: [Sub-Workflow] 提交變更並推送至遠端
 # 提交與推送 (/sub-commit)
 
 1. 列出目前變更的檔案。
-2. 根據 Git Manager 憲章，提示使用者進行 Stage (`git add`)。
-3. 自動分析變更範圍。
-4. **互動式提交**:
+2. 根據 Git Manager 憲章，與使用者一同核對欲 Stage 的檔案 (`git add`)。
+3. **互動式提交 (交互輸入)**:
    - 詢問變更類別 (功能/修正/...)。
    - 詢問需求單號。
    - 合併成符合規範的 Commit Message。
-5. 執行 `git push -u origin [current-branch]`。
+4. **⚠️ [核心確認]**: 將完整的 `git commit -m "..."` 與 `git push` 指令列出，詢問使用者是否執行。
+5. **許可執行**: 獲得使用者明確許可後，依序執行指令。

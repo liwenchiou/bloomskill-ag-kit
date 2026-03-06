@@ -36,10 +36,19 @@ BloomSkill AI Kit 是一個專為現代 AI Agent（如 Antigravity, Cursor, Clau
 
 ### 方法 A：自動導出 (推薦)
 
-如果您在 Windows 環境下，可以使用專用腳本一鍵分發：
+根據您的作業系統選用對應的指令：
+
+**Windows (PowerShell)**:
 
 ```powershell
 .\export-skill.ps1 -SkillName "git-manager" -TargetProjectPath "D:\YourProject"
+```
+
+**Mac / Linux (Bash)**:
+
+```bash
+chmod +x export-skill.sh
+./export-skill.sh git-manager /path/to/your/project
 ```
 
 ### 方法 B：手動搬運
@@ -58,7 +67,8 @@ bloomskill-ag-kit/
 ├── .agent/              # AI Agent 核心目錄
 │   ├── skills/          # 精選技能庫
 │   └── templates/       # 技能開發範本
-├── export-skill.ps1     # 快速導出工具
+├── export-skill.ps1     # 快速導出工具 (Win)
+├── export-skill.sh      # 快速導出工具 (Mac/Linux)
 └── README.md            # 本文件
 ```
 

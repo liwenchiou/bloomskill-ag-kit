@@ -1,9 +1,9 @@
 ---
-name: {{SKILL_NAME}}
-description: {{SKILL_DESCRIPTION}}
+name: skill-generator
+description: 用於快速產生、模板化與初始化新的 BloomSkill Agent 技能套件。
 ---
 
-# {{SKILL_NAME}} 核心憲章 (Constitution)
+# skill-generator 核心憲章 (Constitution)
 
 > [!CAUTION]
 > ### 👑 至高無上原則 (Supreme Directive)

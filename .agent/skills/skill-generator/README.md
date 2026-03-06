@@ -1,6 +1,6 @@
-# {{SKILL_NAME}}
+# skill-generator
 
-> {{SKILL_DESCRIPTION}}
+> 用於快速產生、模板化與初始化新的 BloomSkill Agent 技能套件。
 
 ## 🛰️ 階段式指令 (Workflow Pipeline)
 

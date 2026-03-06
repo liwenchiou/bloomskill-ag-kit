@@ -1,5 +1,7 @@
 #!/bin/bash
 # Pre-commit hook to validate commit messages against Git Manager Constitution
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 commit_msg_file=$1
 commit_msg=$(cat "$commit_msg_file")

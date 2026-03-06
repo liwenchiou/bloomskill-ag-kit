@@ -8,7 +8,7 @@ description: Git Manager 總進入點：啟動完整的開發到 PR 流程
 
 ## 執行流程 (General Flow)
 
-1. **[環境初始化]**: 檢查當前 Git 狀態與 Remote 連線。
+1. **[環境初始化]**: 檢查當前 Git 狀態與 Remote 連線。同時執行 `@[sub-init]` 確認 Git Hooks 正確掛載。
 2. **[同步更新]**: 執行 `@[sub-sync]` 工作流，確保本機代碼是最新的。
 3. **[變更檢核]**: 確認是否有未提交的工作。
 4. **[提交與推送]**: 執行 `@[sub-commit]` 工作流，依照憲章規範完成 Commit 並 Push 到遠端。

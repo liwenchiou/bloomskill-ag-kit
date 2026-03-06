@@ -7,6 +7,8 @@
 - `SKILL.md`: **核心憲章**。定義了 Agent 必須遵守的行為準則（如 Commit 格式、分支規則）。
 - `workflows/`: **自動化指令集**。
   - `/git-manager`: **總入口流程**，會引導您完成從同步、提交到 PR 的完整動作。
+  - `/sub-init`: 初始化 Git 環境與掛載 Hooks (`pre-commit-hook.sh`)。
+  - `/sub-branch`: 統一開發分支命名規範，互動式建立分支。
   - `/sub-sync`: 同步遠端代碼。
   - `/sub-commit`: 互動式提交（自動確保單號與類別符合規範）。
   - `/report-format`: 生成結構化的變更報告，用於 PR 描述。

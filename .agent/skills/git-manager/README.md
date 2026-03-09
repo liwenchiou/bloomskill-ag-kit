@@ -1,18 +1,18 @@
 # Git Manager Skill 說明文件
 
-這是一個高度封裝的 AI Skill，旨在協助您管理 Git 分支、規範提交訊息，並自動化 Gitea PR 流程。
+這是一個高度封裝的 AI Skill，旨在協助您管理 Git 分支、規範提交訊息，並自動化 GitHub PR 流程 (支援 MCP GitHub Server)。
 
 ## 📦 目錄結構與功能
 
-- `SKILL.md`: **核心憲章**。定義了 Agent 必須遵守的行為準則（如 Commit 格式、分支規則）。
+- `SKILL.md`: **核心憲章**。定義了 Agent 必須遵守的行為準則（如 Commit 格式、分支規則、MCP 優先原則）。
 - `workflows/`: **自動化指令集**。
-  - `/git-manager`: **總入口流程**，會引導您完成從同步、提交到 PR 的完整動作。
+  - `/git-manager`: **總入口流程**，引導您完成從同步、建立分支、提交到 PR 的完整動作。
   - `/sub-init`: 初始化 Git 環境與掛載 Hooks (`pre-commit-hook.sh`)。
-  - `/sub-branch`: 統一開發分支命名規範，互動式建立分支。
+  - `/sub-branch`: 統一開發分支命名規範 `[Type]/[IssueID]-[Description]`。
   - `/sub-sync`: 同步遠端代碼。
-  - `/sub-commit`: 互動式提交（自動確保單號與類別符合規範）。
+  - `/sub-commit`: 互動式提交（自動確保類別與 IssueID 符合規範）。
   - `/report-format`: 生成結構化的變更報告，用於 PR 描述。
-  - `/sub-create-pr`: 調用 `tea` 指令建立 PR。
+  - `/sub-create-pr`: 優先調用 **MCP GitHub** 或 `gh` 推送並建立 PR。
 
 - `scripts/`:
   - `check-env.ps1`: Windows 環境偵測腳本。
@@ -38,7 +38,7 @@
 ## 🛠️ 安裝要求
 
 - 確保系統已安裝 `git`。
-- 如果需要建立 PR 功能，請安裝並配置 [Gitea CLI (tea)](https://gitea.com/gitea/tea)。
+- 如果需要建立 PR 功能，建議安裝並配置 [GitHub CLI (gh)](https://cli.github.com/) 或是啟用 **GitHub MCP Server**。
 
 ## 📝 開發規範
 

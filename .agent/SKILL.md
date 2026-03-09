@@ -56,7 +56,12 @@ description: BloomSkill AI Kit 全域開發憲章，定義了開發新 Skill 與
    - 長時腳本必須保持 **Progress Echo**，每 3 秒印出進度以維持狀態。
 4. **[文字處理原則]**: 嚴禁在 shell 指令中直接處理中文字元過濾 (grep/sed)，必須優先改用內建之 `grep_search` 工具，以避免環境編碼 (Locale) 導致的執行掛起。
 
-## 第三章：Skill 開發規範 (The Gold Standard)
+## 第三章：使用者測試與問題紀錄 (UAT Protocols)
+
+1. **[問題紀錄]**: 在進行使用者測試 (User Acceptance Testing) 過程中，凡偵測到或使用者提出的問題、Bug 或優化點，Agent **必須**立即記錄至根目錄的 `測試發現問題.md`。
+2. **[解決即清理]**: 該問題一旦經過修復並驗證成功，Agent 應主動將其從 `測試發現問題.md` 中移除（或於任務單元結束時清空已解決項目）。
+
+## 第四章：Skill 開發規範 (The Gold Standard)
 
 每個 Skill 資料夾必須保持完全封裝並具備：
 

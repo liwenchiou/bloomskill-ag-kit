@@ -42,6 +42,24 @@ BloomSkill AI Kit 是一個專為現代 AI Agent（如 Antigravity, Cursor, Clau
 
 ---
 
+### 🔨 [Skill Generator](.agent/skills/skill-generator/)
+
+**核心功能**: 用於快速產生、模板化與初始化新的 BloomSkill Agent 技能套件。
+
+- **Slash Commands**: `/ideate` → `/develop` → `/validate` → `/test` (PDCA 四階段)。
+- **特色**: 嚴格遵循模板規範，自動產出具備 PDCA 生命週期與安全防護的標準化技能。
+
+---
+
+### 🧪 [Skill Tester](.agent/skills/skill-tester/)
+
+**核心功能**: 讀取指定 Skill 的憲章與工作流，自動在沙盒中建立測試案例並驗證其行為。
+
+- **Slash Commands**: 調用後自動選擇目標 Skill 並開始 AC 驗證。
+- **特色**: **沙盒隔離 (Sanbox Isolation)** 原則，確保測試過程不污染原始項目。
+
+---
+
 ## 📦 如何使用 (Usage Guide)
 
 ### 方法 A：自動導出 (推薦)

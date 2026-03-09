@@ -60,6 +60,15 @@ BloomSkill AI Kit 是一個專為現代 AI Agent（如 Antigravity, Cursor, Clau
 
 ---
 
+### 🛡️ [Security Reporter](.agent/skills/security-reporter/)
+
+**核心功能**: 雙重核實資安通報產出流，確保資訊 100% 正確不誤導。
+
+- **Slash Commands**: `/verified-security-report`
+- **特色**: 結合事實查核 (165防騙網、事實查核中心) 與自動化草稿生成，自動修正不實案例。
+
+---
+
 ## 📦 如何使用 (Usage Guide)
 
 ### 方法 A：自動導出 (推薦)

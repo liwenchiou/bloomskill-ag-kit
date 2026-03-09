@@ -26,9 +26,19 @@ BloomSkill AI Kit 是一個專為現代 AI Agent（如 Antigravity, Cursor, Clau
 
 - **Slash Commands**:
   - `/git-manager`: 總入口，引導您完成標準開發交付流程。
-  - `/report-format`: 自動分析變更並生成精美的 PR 描述。
-  - `/sub-commit`: 互動式提交，自動檢查需求單號規範。
-- **特色**: 內建跨平台偵測指令，支援 `gh` 與 `tea` 雙平台。
+  - `/sub-commit`: AI 主動分析變更並提議提交訊息與 Stage 範圍。
+- **特色**: 整合 GitHub MCP Server 與 `gh` CLI，支援智能環境降級。
+
+---
+
+### 📋 [Issue Tracker](.agent/skills/issue-tracker/)
+
+**核心功能**: 負責 GitHub Issue 的建立、管理與開發任務分發，實現開發閉環。
+
+- **Slash Commands**:
+  - `/issue-tracker`: 主動偵測問題並引導建立 GitHub Issue 與任務盤點。
+  - `/sub-create-pr-linked`: 自動建立 PR 並關聯對應的 Issue (#ID)，實現自動化結案。
+- **特色**: 強化「Issue First」開發準則，確保所有變更有跡可循。
 
 ---
 

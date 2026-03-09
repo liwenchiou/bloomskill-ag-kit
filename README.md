@@ -69,6 +69,15 @@ BloomSkill AI Kit 是一個專為現代 AI Agent（如 Antigravity, Cursor, Clau
 
 ---
 
+### 🧠 [5-Whats Analyzer](.agent/skills/5-whats-analyzer/)
+
+**核心功能**: 使用資深諮詢師視角，透過 5 Whats 邏輯深度剖析問題根源。
+
+- **Slash Commands**: `/5-whats-analyzer`
+- **特色**: 犀利提問、剝離情緒，自動產出具備心理學理論支撐的系統性分析報告。
+
+---
+
 ## 📦 如何使用 (Usage Guide)
 
 ### 方法 A：自動導出 (推薦)
